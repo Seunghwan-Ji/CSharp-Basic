@@ -1,0 +1,23 @@
+솔루션(Solution)
+- 하나 이상의 프로젝트를 담는 ‘컨테이너’.
+- .sln 확장자 파일로 저장됨.
+ex)
+MyGameSolution.sln
+├── GameCore (C++ 프로젝트)
+├── GameEditor (C# WPF 프로젝트)
+└── GameTests (테스트용 프로젝트)
+- 여러 개의 프로젝트를 한 번에 관리.
+- 큰 프로젝트를 구성 요소(게임, 툴, 테스트 등)로 나눌 수 있게 해줌.
+
+프로젝트(Project)
+- 실제 코드, 리소스, 설정 파일들을 포함하는 작업 단위.
+- .vcxproj (C++), .csproj (C#) 같은 확장자.
+- 각각의 프로젝트는 **하나의 실행 파일(EXE)**이나 **라이브러리(DLL)**를 생성.
+ex)
+MyGame.vcxproj → C++로 만든 게임 로직
+GameLauncher.csproj → C#으로 만든 런처 UI
+GameTest.vcxproj → 단위 테스트용 프로젝트
+
+한 줄 요약
+솔루션 = 프로젝트들을 묶는 폴더 / 컨트롤 센터.
+프로젝트 = 실제로 코드가 들어 있고 컴파일되는 단위.
